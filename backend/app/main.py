@@ -1,12 +1,13 @@
 from fastapi import FastAPI
 
 app = FastAPI(
-    title = "Proinventory API",
-    version = "1.00",
+    title="ProInventory API",
+    version="1.0.0",
 )
 
-app.get("/")
+
+@app.get("/")
 def root():
     return {
-        "message": "Welcome to the backend"
-}
+        "message": "Welcome to ProInventory API"
+    }
