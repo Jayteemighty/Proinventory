@@ -1,0 +1,33 @@
+ProInventory is an enterprise inventory, procurement, and point-of-sale platform that enables 
+organizations to manage products, purchasing, stock, sales, users, and reporting across one or more 
+locations with role-based access control.
+
+Design for the backend:
+the app is for any company that offers services to multiple people daily.
+the backend of the app should be able to record sales, intake purchases, quantity in different metrics, selling price and cost price, able to provide receipt of sales, 
+receipt of intake, show list of stock left, date of purchase, date of selling, date of anything done.
+different staffs should have their access, name and password depending on their position in the company. the ceo and devs should have access to see everything,
+some staffs like normal worker should see sales of their department and their inventory.
+
+
+Authentication
+
+Organization
+
+Users
+
+Products
+
+Inventory
+
+Sales
+
+Procurement
+
+Suppliers
+
+Reporting
+
+Audit
+
+Notifications
