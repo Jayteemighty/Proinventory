@@ -1,2 +1,2 @@
-# proinventory
+# Proinventory
 Procurement and inventory platform
