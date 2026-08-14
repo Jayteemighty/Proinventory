@@ -1,7 +1,15 @@
 from sqlalchemy import Boolean, String
+from sqlalchemy.orm import Mapped, mapped_column, relationship
 
-from sqlalchemy.orm import Mapped, mapped_column
+from typing import TYPE_CHECKING
 
+from sqlalchemy import Boolean, String
+from sqlalchemy.orm import Mapped, mapped_column, relationship
+
+from app.db.base import AppBaseModel
+
+if TYPE_CHECKING:
+    from app.department.models import Department
 from app.db.base import Base
 from app.db.mixins import (
     UUIDMixin,
@@ -51,4 +59,9 @@ class Organization(
     is_active: Mapped[bool] = mapped_column(
         Boolean,
         default=True,
+    )
+    
+    departments: Mapped[list["Department"]] = relationship(
+    "Department",
+    back_populates="organization",
     )
