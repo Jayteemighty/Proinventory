@@ -4,7 +4,6 @@ from sqlalchemy.orm import sessionmaker
 from app.config.settings import settings
 from sqlalchemy.orm import Session
 
-
 def get_db():
     db: Session = SessionLocal()
 
