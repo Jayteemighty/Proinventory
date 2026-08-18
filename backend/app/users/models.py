@@ -9,6 +9,7 @@ if TYPE_CHECKING:
     from app.organization.models import Organization
     from app.department.models import Department
     from app.roles.models import Role
+    from app.permissions.models import Permission
 
 
 class User(AppBaseModel):
@@ -71,7 +72,7 @@ class User(AppBaseModel):
         "Role",
     )
 
-    permissions = relationship(
+    permissions: Mapped[list["Permission"]] = relationship(
         "Permission",
         secondary="user_permission",
     )
