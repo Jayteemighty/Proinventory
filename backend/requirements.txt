@@ -20,3 +20,5 @@ python-jose[cryptography]
 passlib[bcrypt]
 python-multipart
 pytest
+pyjwt
+argon2-cffi
